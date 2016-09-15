@@ -1,0 +1,98 @@
+/* Fonts to use:
+Oswald for headers and such: font-family: 'Oswald', sans-serif;
+Open Sans for copy and such: font-family: 'Open Sans', sans-serif;
+
+Color Palette:
+Dark font: #033550
+White font: #fff
+Side-bar blue font: #005FA8
+Side-bar twitter grey: #A7B7C1
+Main copy dark font: #3E4F58
+*/
+
+* {
+  box-sizing: box-border;
+}
+body , ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #03344E;
+}
+
+h1, h3, a{
+  font-family: 'Oswald', sans-serif;
+  text-transform:uppercase;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+header {
+  height: 523px;
+  /* background-image: url("http://unsplash.it/1300/523/"); */
+  position: relative; /* For absolute children */
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,96,172,.6);
+}
+
+nav {
+  position: relative;
+}
+
+nav ul {
+  display: inline-block;
+  list-style: none;
+  position: absolute;
+  font-size: 18px;
+  top: 16px;
+  left: 991px;
+}
+
+nav li {
+  display: inline-block;
+  width: 57px;
+}
+
+.fa {
+  position: relative;
+  top: -2px;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+.brand {
+  padding-left: 141px;
+  padding-top: 10px;
+}
+
+.brand img{
+  height: 45px;
+  vertical-align: middle;
+}
+
+.company-name {
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #03344E;
+  padding-left: 12px;
+  letter-spacing: -.65px;
+}
+
+header h1, header h3{
+  position: relative;
+  text-align: center;
+}
