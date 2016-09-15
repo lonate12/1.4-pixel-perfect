@@ -25,6 +25,9 @@ a {
 
 h1, h3, a{
   font-family: 'Oswald', sans-serif;
+}
+
+h1, a {
   text-transform:uppercase;
 }
 
@@ -48,6 +51,8 @@ header::before {
   right: 0;
   background-color: rgba(0,96,172,.6);
 }
+
+/* Small nav items */
 
 nav {
   position: relative;
@@ -74,6 +79,8 @@ nav li {
   filter: FlipH;
 }
 
+/* Top left logo and comany name */
+
 .brand {
   padding-left: 141px;
   padding-top: 10px;
@@ -92,7 +99,24 @@ nav li {
   letter-spacing: -.65px;
 }
 
+/* Formatting the main title and subtitle */
+
 header h1, header h3{
   position: relative;
   text-align: center;
+}
+
+header h1 {
+  font-size: 96px;
+  letter-spacing: 1px;
+  color: #fff;
+  top: 76px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header h3 {
+  font-size: 15px;
+  top: -4px;
+  letter-spacing: .2px;
+  font-family: 'Open Sans', sans-serif;
 }
