@@ -65,7 +65,7 @@ nav li {
   width: 57px;
 }
 
-.fa {
+nav .fa {
   position: relative;
   top: -2px;
   transform: scaleX(-1);
@@ -89,14 +89,14 @@ nav li {
   text-transform: uppercase;
   color: #03344E;
   padding-left: 12px;
-  letter-spacing: -.65px;
+  letter-spacing: -.59px;
 }
 
 /* Formatting the main title and subtitle */
 
 header {
   height: 523px;
-  /* background-image: url("http://unsplash.it/1300/523/"); */
+   background-image: url("images/surfer.jpg");
   position: relative; /* For absolute children */
 }
 
@@ -128,6 +128,7 @@ header h3 {
   top: -4px;
   letter-spacing: .2px;
   font-family: 'Open Sans', sans-serif;
+  color: #083451;
 }
 
 /* Main section*/
@@ -135,6 +136,7 @@ header h3 {
 .main-wrapper {
   width: 75%;
   margin: 0 auto;
+  position: relative;
 }
 
 .main {
@@ -159,10 +161,6 @@ header h3 {
 }
 
 /* Author portion in main section */
-
-.main-header {
-  position: relative;
-}
 .main-header::before {
   content: "";
   position: absolute;
@@ -179,7 +177,9 @@ header h3 {
 #author-picture-small {
   height: 22px;
   border-radius: 30px;
-  position: relative;
+  position: absolute;
+  top: 209px;
+  left: 4px;
 }
 
 .author-name a{
@@ -280,7 +280,17 @@ p a:hover {
 .ad {
   height: 300px;
   width: 278px;
-  background-image: url("https://unsplash.it/278/300");
+  position: relative;
+}
+
+.ad::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,96,172,.6);
 }
 
 #about-ad {
@@ -354,3 +364,48 @@ p a:hover {
 }
 
 /* Footer Section */
+
+footer {
+  background-color: #033550;
+}
+
+.tiy {
+  display: inline-block;
+  position: relative;
+}
+
+.tiy p {
+  color: #A0B2BD;
+  display: inline-block;
+}
+
+.tiy-logo {
+  width: 46px;
+  height: 35px;
+  position:relative;
+}
+
+.mini-nav-bottom {
+  display: inline-block;
+  list-style: none;
+}
+
+.mini-nav-bottom li {
+  display: inline-block;
+  width: 85px;
+  border-right: 1px solid #5B666D;
+}
+
+.mini-nav-bottom li:last-child {
+  border-right: none;
+}
+
+.mini-nav-bottom a {
+  color: #9DADB8;
+  display: block;
+  text-align: center;
+}
+
+.take-out {
+  height: 110px;
+}
