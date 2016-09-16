@@ -134,20 +134,28 @@ header h3 {
 /* Main section*/
 
 .main-wrapper {
-  width: 75%;
+  width: 1100px;
   margin: 0 auto;
-  position: relative;
 }
 
 .main {
-  width:69%;
+  width:698px;
+  height: 1000px;
   display: inline-block;
   margin-right: auto;
+  position: relative;
+}
+
+.main h1, #author-picture-small, #author-name-small, #on, .date, #p1, #p2, #p3, #p4,
+.random, #button-1, #button-2, #button-3, .fa-comment, .fa-cloud-upload, .fa-share-square-o {
+  position: absolute;
 }
 
 .main h1 {
   color: #033550;
   font-size: 30px;
+  top: 7px;
+  left: 59px;
 }
 
 .main h4 {
@@ -161,25 +169,27 @@ header h3 {
 }
 
 /* Author portion in main section */
-.main-header::before {
+.main::before {
   content: "";
   position: absolute;
   height: 22px;
   width: 22px;
   border-radius: 30px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top: 209px;
+  left: 4px;
   background-color: rgba(0,96,172,.6);
+  z-index: -2;
 }
 
 #author-picture-small {
   height: 22px;
+  width: 22px;
   border-radius: 30px;
   position: absolute;
   top: 209px;
   left: 4px;
+  background-image: url("https://unsplash.it/22/22");
+  z-index: 1;
 }
 
 .author-name a{
@@ -226,12 +236,9 @@ p a:hover {
 
 /* Sidebar */
 .sidebar {
-  width: 28.6%;
+  width: 279px;
   display: inline-block;
-}
-
-.sidebar-image {
-  position: relative; /*This relative is for the obsolute positioning of the psuedo transparency*/
+  position: relative;
 }
 
 .sidebar-image::before {
@@ -240,7 +247,6 @@ p a:hover {
   width: 84px;
   border-radius: 90px;
   color: rgba(0,96,172,.6);
-  position: absolute;
   left: 97px;
   z-index: 1;
 }
@@ -249,20 +255,22 @@ p a:hover {
   border-radius: 90px;
   display: block;
   margin: 0 auto;
-  position: relative;
+  top:-44px;
+  left: 100px;
   z-index:0;
 }
 
 #sidebar-name {
   color: #005FA8;
   text-transform: uppercase;
-  text-align: center;
+  top: -4px;
+  left: 80px;
 }
 
 .social {
   list-style: none;
-  width: 69%;
-  margin: 0 auto;
+  top: 10px;
+  left: 80px;
 }
 
 .social li {
@@ -280,12 +288,12 @@ p a:hover {
 .ad {
   height: 300px;
   width: 278px;
-  position: relative;
+  top: 20px;
+  left: 80px;
 }
 
 .ad::before {
   content: "";
-  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
@@ -295,6 +303,8 @@ p a:hover {
 
 #about-ad {
   text-align: right;
+  top: 200px;
+  left: 20px;
 }
 
 #about-ad a{
@@ -306,10 +316,14 @@ p a:hover {
   color: #006FAE;
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
+  top: 100px;
+  left: 20px;
 }
 
 .sidebar-section p {
   color: #A2B3BE;
+  top: 300px;
+  left: 20px;
 }
 
 .sidebar-section a {
@@ -335,7 +349,6 @@ p a:hover {
 
 .popular-posts li::before {
   content: "";
-  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
@@ -352,7 +365,6 @@ p a:hover {
 
 .popular-posts span {
   color: #fff;
-  position: absolute;
   bottom: 0;
   left: 0;
   text-transform: uppercase;
