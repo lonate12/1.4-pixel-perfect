@@ -27,6 +27,11 @@ h1, h3, a{
   font-family: 'Oswald', sans-serif;
 }
 
+p {
+  font-family: 'Open Sans', sans-serif;
+  color: #5D686E;
+}
+
 h1, a {
   text-transform:uppercase;
 }
@@ -34,22 +39,6 @@ h1, a {
 .container {
   width: 1300px;
   margin: 0 auto;
-}
-
-header {
-  height: 523px;
-  /* background-image: url("http://unsplash.it/1300/523/"); */
-  position: relative; /* For absolute children */
-}
-
-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0,96,172,.6);
 }
 
 /* Small nav items */
@@ -101,6 +90,22 @@ nav li {
 
 /* Formatting the main title and subtitle */
 
+header {
+  height: 523px;
+  /* background-image: url("http://unsplash.it/1300/523/"); */
+  position: relative; /* For absolute children */
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,96,172,.6);
+}
+
 header h1, header h3{
   position: relative;
   text-align: center;
@@ -119,4 +124,103 @@ header h3 {
   top: -4px;
   letter-spacing: .2px;
   font-family: 'Open Sans', sans-serif;
+}
+
+/* Main section*/
+
+.main-wrapper {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.main {
+  width:69%;
+  display: inline-block;
+  margin-right: auto;
+}
+
+.main h1 {
+  color: #033550;
+  font-size: 30px;
+}
+
+.main h4 {
+  color: #006FAE;
+  border-left: 2px solid #D3D3D3;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main p {
+  color: #5D686E;
+}
+
+/* Author portion in main section */
+
+.main-header {
+  position: relative;
+}
+.main-header::before {
+  content: "";
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  border-radius: 30px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,96,172,.6);
+}
+
+#author-picture-small {
+  height: 22px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.author-name a{
+  color: #005FA8;
+  text-transform: none;
+}
+
+.main-header span {
+  color: #A7B7C1;
+}
+
+.date {
+  text-decoration: underline;
+}
+
+/* Main section copy*/
+
+p a {
+  color: #5D686E;
+  text-decoration: underline;
+  text-transform: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p a:hover {
+  color: #2E79B2;
+  text-transform: none;
+}
+
+/* Main section bottom action buttons */
+
+.action-buttons {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  background-color: #A2B3BE;
+  border-left: 33px solid #5A656B;
+  padding: 10px 14px;
+}
+
+.action-buttons:hover {
+  background-color: #006FAE;
+  border-left-color: #033550;
+}
+
+.sidebar {
+  width: 28.6%;
+  display: inline-block;
 }
