@@ -146,16 +146,41 @@ header h3 {
   position: relative;
 }
 
-.main h1, #author-picture-small, #author-name-small, #on, .date, #p1, #p2, #p3, #p4,
+#first-part, #second-part, #author-picture-small, #author-name-small, #on, .date, #p1, #p2, #p3, #p4,
 .random, #button-1, #button-2, #button-3, .fa-comment, .fa-cloud-upload, .fa-share-square-o {
   position: absolute;
 }
 
 .main h1 {
   color: #033550;
-  font-size: 30px;
-  top: 7px;
-  left: 59px;
+  font-size: 62px;
+}
+
+#first-part {
+  top: 10px;
+  left: 61px;
+}
+
+#second-part {
+  top: 79px;
+  left: 62px;
+  letter-spacing: .9px;
+}
+
+#p1, #p2, #p3, #p4 {
+  padding-right: 21px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+#p1 {
+  top: 253px;
+  left: 63px;
+}
+
+#p2{
+  top: 383px;
+  left: 63px;
 }
 
 .main h4 {
@@ -176,9 +201,9 @@ header h3 {
   width: 22px;
   border-radius: 30px;
   top: 209px;
-  left: 4px;
+  left: 64px;
   background-color: rgba(0,96,172,.6);
-  z-index: -2;
+  z-index: 0;
 }
 
 #author-picture-small {
@@ -187,22 +212,38 @@ header h3 {
   border-radius: 30px;
   position: absolute;
   top: 209px;
-  left: 4px;
+  left: 64px;
   background-image: url("https://unsplash.it/22/22");
-  z-index: 1;
+  z-index: -1;
 }
 
-.author-name a{
+#author-name-small {
+  top: 211px;
+  left: 97px;
+}
+
+#author-name-small a{
   color: #005FA8;
   text-transform: none;
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.main-header span {
+#on {
+  top: 213px;
+  left: 178px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
   color: #A7B7C1;
 }
 
 .date {
   text-decoration: underline;
+  top: 216px;
+  left: 198px;
+  color: #A7B7C1;
+  font-size: 11px;
+  letter-spacing: .9px;
 }
 
 /* Main section copy*/
@@ -236,9 +277,11 @@ p a:hover {
 
 /* Sidebar */
 .sidebar {
-  width: 279px;
+  width: 280px;
+  height: 1000px;
   display: inline-block;
   position: relative;
+  top: -259px;
 }
 
 .sidebar-image::before {
