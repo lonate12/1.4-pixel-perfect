@@ -454,73 +454,227 @@ p a:hover {
 
 /* Begining of bottom section */
 
-.popular-posts-headline {
+.lower-container {
+  position:relative;
+  height:580px;
+  width: 1300px;
+  top: 16px;
+  left: -1px;
+}
+
+#popular-posts-h1, #populat-posts-ul, #post1, #post2, #post3, #post4,
+#tiy-logo, #copyright, #footer, #post1-description, #post2-description, #post3-description,
+#post4-description, #nav-1, #nav-2, #nav-3, #nav-4 {
+  position: absolute;
+}
+
+#popular-posts-h1 {
   color: #033550;
   text-align: center;
   border-top: 1px solid #E1E7EA;
+  font-size: 63px;
+  top: 5px;
+  left: 0px;
+  width: 1300px;
+  margin: 0;
+  padding-top: 24px;
 }
 
-.popular-posts li{
-  display: inline-block;
+#popular-posts-ul {
+  list-style: none;
+}
+
+#popular-posts-ul li{
   background-image: url("https://unsplash.it/325/330");
   height: 330px;
   width: 325px;
-  position: relative;
+  position: absolute;
 }
 
-.popular-posts li::before {
+/* Post 1 */
+#post1 {
+  top: 153px;
+}
+#post1 a::before {
   content: "";
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0,96,172,.6);
-  z-index: 100;
-}
-
-.popular-posts a {
-  display: block;
   height: 330px;
   width: 325px;
+  background-color: rgba(0,96,172,.6);
+  z-index: 10;
+  position: absolute;
 }
-
-.popular-posts span {
+#post1 a {
+  position: absolute;
+  height: 330px;
+  width: 325px;
+  z-index: 8;
+}
+#post1 :hover::before {
+  display: none;
+}
+#post1:hover span {
   color: #fff;
-  bottom: 0;
+}
+#post1 span {
+  color: #003551;
+  bottom: 3px;
   left: 0;
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
+  z-index: 9;
+  font-size: 32px;
 }
+/* Post One */
 
-.popular-posts li:hover::before {
+/* Post Two */
+#post2 {
+  top: 153px;
+  left: 324px;
+}
+#post2 a::before {
+  content: "";
+  height: 330px;
+  width: 325px;
+  background-color: rgba(0,96,172,.6);
+  z-index: 10;
+  position: absolute;
+}
+#post2 a {
+  position: absolute;
+  height: 330px;
+  width: 325px;
+  z-index: 8;
+}
+#post2 :hover::before {
   display: none;
 }
+#post2:hover span {
+  color: #fff;
+}
+#post2 span {
+  color: #003551;
+  bottom: 4px;
+  left: 17px;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  z-index: 9;
+  font-size: 32px;
+}
+/* Post Two */
+
+/* Post Three */
+#post3 {
+  top: 153px;
+  left: 650px;
+}
+#post3 a::before {
+  content: "";
+  height: 330px;
+  width: 325px;
+  background-color: rgba(0,96,172,.6);
+  z-index: 10;
+  position: absolute;
+}
+#post3 a {
+  position: absolute;
+  height: 330px;
+  width: 325px;
+  z-index: 8;
+}
+#post3 :hover::before {
+  display: none;
+}
+#post3:hover span {
+  color: #fff;
+}
+#post3 span {
+  color: #003551;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  z-index: 9;
+  font-size: 32px;
+}
+#post3-description {
+  bottom: 44px;
+  left: 18px;
+}
+#post3-description-2 {
+  position: absolute;
+  bottom: 7px;
+  left: 16px;
+}
+/* Post Three */
+
+/* Post Four */
+#post4 {
+  top: 153px;
+  left: 975px;
+}
+#post4 a::before {
+  content: "";
+  height: 330px;
+  width: 325px;
+  background-color: rgba(0,96,172,.6);
+  z-index: 10;
+  position: absolute;
+}
+#post4 a {
+  position: absolute;
+  height: 330px;
+  width: 325px;
+  z-index: 8;
+}
+#post4 :hover::before {
+  display: none;
+}
+#post4:hover span {
+  color: #fff;
+}
+#post4 span {
+  color: #003551;
+  bottom: 6px;
+  left: 19px;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  z-index: 9;
+  font-size: 32px;
+  letter-spacing: -1px;
+}
+/* Post Four */
 
 /* Footer Section */
 
-footer {
+#footer {
   background-color: #033550;
+  height: 97px;
+  width: 1300px;
+  bottom: 0px;
 }
 
-.tiy {
-  display: inline-block;
-  position: relative;
-}
-
-.tiy p {
-  color: #A0B2BD;
-  display: inline-block;
-}
-
-.tiy-logo {
+#tiy-logo {
   width: 46px;
   height: 35px;
-  position:relative;
+  position: absolute;
+  top: 27px;
+  left: 165px;
+}
+
+#copyright {
+  top: 27px;
+  left: 225px;
+  font-size: 10px;
+  letter-spacing: .5px;
 }
 
 .mini-nav-bottom {
-  display: inline-block;
+  width: 330px;
+  height: 23px;
   list-style: none;
+  margin: 0;
+  position: absolute;
+  right: 162px;
+  top: 37px;
+  font-size: 13px;
 }
 
 .mini-nav-bottom li {
@@ -537,8 +691,28 @@ footer {
   color: #9DADB8;
   display: block;
   text-align: center;
+  text-transform: capitalize;
+  font-family: 'Open Sans', sans-serif;
+}
+#nav-1 {
+  left: 2px;
+  top: 2px;
 }
 
+#nav-2 {
+  left: 85px;
+  top: 2px;
+}
+
+#nav-3 {
+  left: 168px;
+  top: 2px;
+}
+
+#nav-4 {
+  left: 253px;
+  top: 2px;
+}
 .take-out {
   height: 110px;
 }
