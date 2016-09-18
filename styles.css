@@ -529,7 +529,7 @@ p a:hover {
 /* Post Two */
 #post2 {
   top: 153px;
-  left: 324px;
+  left: 325px;
 }
 #post2 a::before {
   content: "";
